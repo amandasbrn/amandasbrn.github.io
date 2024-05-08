@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-🌱 Currently pivoting from business intelligence to data science, machine learning, and AI as I want to expand my horizon from descriptive analytics with present and historical data, to the realm of anticipating future outcomes with predictive analytics.
+🌱 Currently pivoting from business intelligence to data science, machine learning, and AI as I want to expand my horizon from descriptive analytics to the realm of anticipating future outcomes with predictive analytics.
 
 👨‍💻 I have experience in handling large datasets, translating business needs to technical specifications, and data analysis from working in the data field for 3+ years, strengthening my skills to transition.
 
