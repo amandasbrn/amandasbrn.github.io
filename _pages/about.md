@@ -19,7 +19,7 @@ redirect_from:
 <a href="https://www.tableau.com/" target="_blank" rel="noreferrer"> <img src="https://logos-world.net/wp-content/uploads/2021/10/Tableau-Emblem.png" alt="Tableau" width="70" height="40"/>  </a>
 <a href="https://code.visualstudio.com/download" target="_blank" rel="noreferrer"> <img src="https://carleton.ca/scs/wp-content/uploads/vscode-1.png" alt="VS Code" width="40" height="40"/> </a>
 </p>
-<br></br>
+
 
 Professional Experience & Contribution
 ======
