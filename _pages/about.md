@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-🌱 As a Business Intelligence Consultant, I have now decided to pivot to the world of data science, machine learning, and AI as I want to expand my horizon from descriptive analytics with present and historical data, to the realm of anticipating future outcomes with predictive analytics.
+🌱 Currently pivoting from business intelligence to data science, machine learning, and AI as I want to expand my horizon from descriptive analytics with present and historical data, to the realm of anticipating future outcomes with predictive analytics.
 
-👨‍💻 Working in the data field for 3+ years has strengthened my foundation for transitioning to the data science field, such as handling large datasets, translating business needs to technical specifications and data analysis.
+👨‍💻 I have experience in handling large datasets, translating business needs to technical specifications, and data analysis from working in the data field for 3+ years, strengthening my skills to transition.
 
 🤖 Since this field requires me to stay updated with the current trends, I am leveling myself up from machine learning to deep learning, NLP, and generative AI. Stay tuned for my next projects!
 
@@ -20,6 +20,7 @@ redirect_from:
 <a href="https://code.visualstudio.com/download" target="_blank" rel="noreferrer"> <img src="https://carleton.ca/scs/wp-content/uploads/vscode-1.png" alt="VS Code" width="40" height="40"/> </a>
 </p>
 
+<h3> </h3>
 
 Professional Experience & Contribution
 ======
