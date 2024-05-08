@@ -9,9 +9,9 @@ redirect_from:
 
 🌱 Currently pivoting from business intelligence to data science, machine learning, and AI as I want to expand my horizon from descriptive analytics to the realm of anticipating future outcomes with predictive analytics.
 
-👨‍💻 I have experience in handling large datasets, translating business needs to technical specifications, and data analysis from working in the data field for 3+ years, strengthening my skills to transition.
+👨‍💻 I have experience in handling large datasets, translating business needs to technical specifications, and data analysis from working in the data field for 3+ years, strengthening my skills to transition to data science.
 
-🤖 Since this field requires me to stay updated with the current trends, I am leveling myself up from machine learning to deep learning, NLP, and generative AI. Stay tuned for my next projects!
+🤖 Since I am committed to staying updated with the latest technology, I am leveling myself up from machine learning to deep learning, NLP, and generative AI. Stay tuned for my next projects!
 
 <h3 align="left">My Tech Stacks:</h3>
 <p align="left"> <a href="https://www.oracle.com/" target="_blank" rel="noreferrer"> <img src="https://logowik.com/content/uploads/images/azure-sql-database6354.jpg" alt="SQL" width="60" height="50"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> 
