@@ -1,10 +1,10 @@
 ---
 title: "Spotify Data Analysis and Clustering using K-Means"
-excerpt: <p>"I analyzed Spotify 2023 dataset to determine the factors affecting the popularity of songs.</p><img src='https://assets-global.website-files.com/64830736e7f43d491d70ef30/64bfca46b1569eeda774403d_64a57f4512ee9430c0ea7cf8_64a2cf43ee15ed8228d585a0_Business_Model_Examples-Spotify.webp' width='500' height='300'>"
+excerpt: <p>I analyzed Spotify 2023 dataset to determine the factors affecting the popularity of songs.</p><img src='https://assets-global.website-files.com/64830736e7f43d491d70ef30/64bfca46b1569eeda774403d_64a57f4512ee9430c0ea7cf8_64a2cf43ee15ed8228d585a0_Business_Model_Examples-Spotify.webp' width='500' height='300'>"
 collection: portfolio
 ---
 
-**Repository and full code: https://github.com/amandasbrn/spotify-EDA-clustering**
+**Repository and full code:** <a href="https://github.com/amandasbrn/spotify-EDA-clustering">https://github.com/amandasbrn/spotify-EDA-clustering</a>
 ### Analysis Result:
 1. Most Streamed Songs on Spotify in 2023 (all releases)
    ![image](https://github.com/amandasbrn/spotify-EDA-clustering/assets/66349501/90261f17-c985-4852-aa25-93614ab36727)
