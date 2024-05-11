@@ -1,6 +1,6 @@
 ---
 title: "Spotify Data Analysis and Clustering using K-Means"
-excerpt: <p>I analyzed Spotify 2023 dataset to determine the factors affecting the popularity of songs.</p><img src='https://assets-global.website-files.com/64830736e7f43d491d70ef30/64bfca46b1569eeda774403d_64a57f4512ee9430c0ea7cf8_64a2cf43ee15ed8228d585a0_Business_Model_Examples-Spotify.webp' width='500' height='300'>
+excerpt: <p>I analyzed Spotify 2023 dataset to determine the factors affecting the popularity of songs. Tech stacks: Python, scikit-learn, seaborn, plotly</p><img src='https://assets-global.website-files.com/64830736e7f43d491d70ef30/64bfca46b1569eeda774403d_64a57f4512ee9430c0ea7cf8_64a2cf43ee15ed8228d585a0_Business_Model_Examples-Spotify.webp' width='500' height='300'>
 collection: portfolio
 ---
 
