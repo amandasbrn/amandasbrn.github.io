@@ -51,6 +51,7 @@ body {
 .project-card a,
 .contact-links a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .brand {
@@ -210,6 +211,59 @@ main {
   grid-template-columns: 1.5fr 1fr;
 }
 
+.about-stack {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.about-copy {
+  display: grid;
+  gap: 1rem;
+}
+
+.about-copy p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.8;
+}
+
+.skill-groups {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.skill-group {
+  padding: 1.15rem;
+  border: 1px solid rgba(10, 42, 146, 0.1);
+  border-radius: 1.1rem;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.skill-group h3,
+.experience-item h3 {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.15rem;
+  color: var(--primary-deep);
+}
+
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.9rem;
+}
+
+.skill-pills span {
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(233, 184, 201, 0.45);
+  color: var(--accent);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.82rem;
+}
+
 .detail-list {
   margin: 0;
   padding-left: 1.1rem;
@@ -272,6 +326,37 @@ main {
   gap: 0.85rem;
 }
 
+.experience-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.experience {
+  margin-top: 1rem;
+}
+
+.experience-item {
+  padding: 1.35rem 1.4rem;
+  border: 1px solid rgba(10, 42, 146, 0.1);
+  border-radius: 1.15rem;
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.experience-period {
+  margin: 0 0 0.6rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #c77e98;
+}
+
+.experience-item p:last-child {
+  margin-top: 0.8rem;
+  color: var(--text);
+  line-height: 1.7;
+}
+
 .site-footer {
   padding-top: 1.5rem;
   text-align: center;
@@ -282,6 +367,7 @@ main {
 @media (max-width: 840px) {
   .about-grid,
   .contact-grid,
+  .skill-groups,
   .project-grid {
     grid-template-columns: 1fr;
   }
