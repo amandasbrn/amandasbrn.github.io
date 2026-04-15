@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amanda Sabrina | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio website for Amanda Sabrina featuring projects, experience, and contact information."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top">Amanda Sabrina</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <p class="eyebrow">Portfolio</p>
+          <div class="hero-copy">
+            <h1>hi, im dira</h1>
+            <p class="hero-text">
+              I design and build web experiences with a clean visual style and
+              strong attention to detail. This page is a simple starter for my
+              work, links, and contact details.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">See My Work</a>
+            <a class="button button-secondary" href="#contact">Get In Touch</a>
+          </div>
+        </section>
+
+        <section class="about section-card" id="about">
+          <div class="section-heading">
+            <p class="section-label">About</p>
+            <h2>simple, thoughtful, and personal.</h2>
+          </div>
+          <div class="about-grid">
+            <p>
+              I am building a portfolio that feels calm and direct. This space
+              is for selected projects, a little bit about me, and an easy way
+              to connect.
+            </p>
+            <ul class="detail-list">
+              <li>Based in Sydney, Australia</li>
+              <li>Interested in front-end, design, and digital storytelling</li>
+              <li>Open to collaborations and new opportunities</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="projects" id="projects">
+          <div class="section-heading">
+            <p class="section-label">Selected Work</p>
+            <h2>a few projects i want to highlight.</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <p class="project-type">Web</p>
+              <h3>Project One</h3>
+              <p>
+                Add a short summary about what this project is and what you
+                contributed.
+              </p>
+              <div class="tag-row">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <a href="#" aria-label="Open Project One">View project</a>
+            </article>
+
+            <article class="project-card">
+              <p class="project-type">Design</p>
+              <h3>Project Two</h3>
+              <p>
+                Use this card for a visual design project, concept piece, or
+                class work you are proud of.
+              </p>
+              <div class="tag-row">
+                <span>UI Design</span>
+                <span>Branding</span>
+                <span>Figma</span>
+              </div>
+              <a href="#" aria-label="Open Project Two">View project</a>
+            </article>
+
+            <article class="project-card">
+              <p class="project-type">Experiment</p>
+              <h3>Project Three</h3>
+              <p>
+                Keep one project a little more personal or experimental to show
+                your range.
+              </p>
+              <div class="tag-row">
+                <span>Concept</span>
+                <span>Research</span>
+                <span>Storytelling</span>
+              </div>
+              <a href="#" aria-label="Open Project Three">View project</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="contact section-card" id="contact">
+          <div class="section-heading">
+            <p class="section-label">Contact</p>
+            <h2>let's connect.</h2>
+          </div>
+          <div class="contact-grid">
+            <p>
+              Replace these with your real links so people can reach you
+              quickly.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:hello@example.com">hello@example.com</a>
+              <a href="https://github.com/" target="_blank" rel="noreferrer"
+                >GitHub</a
+              >
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© <span id="year"></span> Amanda Sabrina. Built with GitHub Pages.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

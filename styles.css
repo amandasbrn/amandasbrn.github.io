@@ -1,0 +1,277 @@
+:root {
+  --bg: #5992c6;
+  --surface: #d8e5f4;
+  --card: #f8fbff;
+  --text: #31241f;
+  --muted: rgba(49, 36, 31, 0.72);
+  --line: rgba(10, 42, 146, 0.14);
+  --primary: #e9b8c9;
+  --primary-deep: #0a2a92;
+  --accent: #31241f;
+  --max-width: 960px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Nata Sans", sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, #b9d1ea 0%, var(--bg) 100%);
+}
+
+.page-shell {
+  width: min(calc(100% - 2rem), var(--max-width));
+  margin: 0 auto;
+  padding: 1.5rem 0 3rem;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  padding: 0.25rem 0;
+}
+
+.brand,
+.site-nav a,
+.button,
+.project-card a,
+.contact-links a {
+  text-decoration: none;
+}
+
+.brand {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-deep);
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.site-nav a {
+  color: var(--primary-deep);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+main {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.hero,
+.section-card,
+.project-card {
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+  background: rgba(248, 251, 255, 0.82);
+}
+
+.hero {
+  padding: 2.25rem;
+}
+
+.eyebrow,
+.section-label,
+.project-type {
+  margin: 0 0 0.85rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.hero-copy h1,
+.section-heading h2,
+.project-card h3 {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.hero-copy h1 {
+  font-size: clamp(2.8rem, 8vw, 5.8rem);
+  color: var(--primary-deep);
+}
+
+.hero-text,
+.about-grid p,
+.project-card p,
+.contact-grid p,
+.detail-list {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.hero-text {
+  max-width: 42rem;
+  margin-top: 1.25rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.75rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.15rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.button-primary {
+  color: #ffffff;
+  background: var(--primary-deep);
+}
+
+.button-secondary {
+  color: var(--primary-deep);
+  border-color: var(--line);
+  background: rgba(233, 184, 201, 0.22);
+}
+
+.section-card {
+  padding: 1.75rem;
+}
+
+.section-heading {
+  margin-bottom: 1.25rem;
+}
+
+.section-heading h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  color: var(--primary-deep);
+}
+
+.about-grid,
+.contact-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.detail-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.project-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background: rgba(248, 251, 255, 0.94);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: var(--primary-deep);
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.2rem;
+}
+
+.tag-row span {
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(233, 184, 201, 0.4);
+  color: var(--primary-deep);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.project-card a,
+.contact-links a {
+  color: var(--primary-deep);
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+.project-card a {
+  margin-top: auto;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.site-footer {
+  padding-top: 1.5rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 840px) {
+  .about-grid,
+  .contact-grid,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    width: min(calc(100% - 1rem), var(--max-width));
+    padding-top: 1rem;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+
+  .hero,
+  .section-card,
+  .project-card {
+    border-radius: 1.2rem;
+  }
+
+  .hero,
+  .section-card,
+  .project-card {
+    padding: 1.25rem;
+  }
+}
