@@ -1,12 +1,12 @@
 :root {
-  --bg: #0a2a92;
+  --bg: #061d68;
   --surface: rgba(255, 255, 255, 0.08);
   --card: #f8f4f6;
   --text: #31241f;
   --muted: rgba(49, 36, 31, 0.72);
   --line: rgba(233, 184, 201, 0.24);
   --primary: #e9b8c9;
-  --primary-deep: #e9b8c9;
+  --primary-deep: #0a2a92;
   --accent: #31241f;
   --max-width: 960px;
 }
@@ -22,11 +22,12 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: "Nata Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
   color: var(--text);
   background:
     radial-gradient(circle at top left, rgba(233, 184, 201, 0.14), transparent 24%),
-    linear-gradient(180deg, #1235a7 0%, var(--bg) 100%);
+    linear-gradient(180deg, #0a2a92 0%, var(--bg) 100%);
 }
 
 .page-shell {
@@ -111,6 +112,10 @@ main {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  color: var(--primary-deep);
+}
+
+.eyebrow {
   color: var(--primary);
 }
 
@@ -125,7 +130,7 @@ main {
 
 .hero-copy h1 {
   font-size: clamp(2.8rem, 8vw, 5.8rem);
-  color: #ffffff;
+  color: var(--primary);
 }
 
 .hero-text,
@@ -134,9 +139,16 @@ main {
 .contact-grid p,
 .detail-list {
   margin: 0;
-  color: rgba(255, 255, 255, 0.82);
+  color: var(--primary);
   font-size: 1rem;
   line-height: 1.7;
+}
+
+.section-card .about-grid p,
+.section-card .contact-grid p,
+.section-card .detail-list,
+.project-card p {
+  color: var(--text);
 }
 
 .hero-text {
@@ -184,7 +196,11 @@ main {
 
 .section-heading h2 {
   font-size: clamp(1.8rem, 4vw, 3rem);
-  color: var(--text);
+  color: var(--primary-deep);
+}
+
+.projects .section-heading h2 {
+  color: var(--primary);
 }
 
 .about-grid,
@@ -213,15 +229,20 @@ main {
 }
 
 .project-card h3 {
+  margin-top: 0.45rem;
   font-size: 1.5rem;
-  color: var(--text);
+  color: var(--primary-deep);
+}
+
+.project-card h3 + p {
+  margin-top: 0.95rem;
 }
 
 .tag-row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin: 1rem 0 1.2rem;
+  margin: 1.25rem 0 1.2rem;
 }
 
 .tag-row span {
