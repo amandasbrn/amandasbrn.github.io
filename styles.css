@@ -263,7 +263,7 @@ main {
 .project-case h3 {
   margin: 0;
   font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-size: 2rem;
   line-height: 1.05;
   color: var(--accent);
 }
@@ -311,9 +311,19 @@ main {
 }
 
 .project-detail {
-  margin: 1.35rem 0 0;
+  margin: 0;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(10, 42, 146, 0.1);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.75);
   color: var(--text);
   line-height: 1.7;
+}
+
+.project-info-list {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1.35rem;
 }
 
 .tab-list {
