@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dira A Sabrina | Portfolio</title>
+    <title>dira's page</title>
     <meta
       name="description"
       content="Portfolio website for Dira A Sabrina featuring projects, experience, and contact information."
@@ -18,16 +18,6 @@
   </head>
   <body>
     <div class="page-shell">
-      <header class="site-header">
-        <a class="brand" href="#top">Dira A Sabrina</a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
-
       <main id="top">
         <section class="hero">
           <div class="hero-copy">
@@ -38,13 +28,12 @@
             </p>
           </div>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">See My Work</a>
             <a
               class="button button-secondary"
               href="https://github.com/amandasbrn"
               target="_blank"
               rel="noreferrer"
-              >GitHub Profile</a
+              >Github</a
             >
             <a class="button button-secondary" href="https://www.linkedin.com/in/dira-amanda/">LinkedIn</a>
             <a class="button button-secondary" href="mailto:dira.sabrina@gmail.com">Email</a>
@@ -52,181 +41,153 @@
           </div>
         </section>
 
-        <section class="about section-card" id="about">
-          <div class="section-heading">
-            <p class="section-label">About</p>
-            <h2>making data make sense.</h2>
+        <section class="tabs-shell section-card" id="tabs">
+          <div class="tab-list" role="tablist" aria-label="Portfolio sections">
+            <button class="tab-button is-active" type="button" role="tab" aria-selected="true" aria-controls="panel-about" id="tab-about" data-tab="about">About Me</button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-projects" id="tab-projects" data-tab="projects">Projects</button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-experience" id="tab-experience" data-tab="experience">Work Experience</button>
           </div>
-          <div class="about-stack">
-            <div class="about-copy">
-              <p>
-                4+ years of experience in data, took roles as a Business Intelligence Analyst and Data Scientist. Currently studying Master of Data Science at University of Sydney, and develop specific interests in <u>Applied ML/AI, MLOps, and Agentic AI</u>.
-                <br>I enjoy turning messy information
-                into something meaningful; a model, a
-                dashboard, or a product that helps someone make a better
-                decision.</br>
-              </p>
-            </div>
-            <div class="skill-groups">
-              <div class="skill-group">
-                <h3>DevOps &amp; tools</h3>
-                <div class="skill-pills">
-                  <span>AWS</span>
-                  <span>Azure</span>
-                  <span>Git</span>
-                  <span>VS Code</span>
+
+          <section class="tab-panel is-active" id="panel-about" role="tabpanel" aria-labelledby="tab-about" data-panel="about">
+            <div class="about-stack">
+              <div class="about-copy">
+                <p>
+                  4+ years of experience in data, with roles across business intelligence and data science. Right now, I am especially interested in <u>Applied ML/AI, MLOps, and Agentic AI</u>. I enjoy turning messy information into something meaningful; a model, a dashboard, or a product that helps someone make a better decision.
+                </p>
+              </div>
+              <div class="hero-skills">
+                <div class="hero-skills-label">tech stack / skills</div>
+                <div class="skill-groups">
+                  <div class="skill-group">
+                    <h3>DevOps &amp; tools</h3>
+                    <div class="skill-pills">
+                      <span>AWS</span>
+                      <span>Azure</span>
+                      <span>Git</span>
+                      <span>VS Code</span>
+                    </div>
+                  </div>
+                  <div class="skill-group">
+                    <h3>Language &amp; framework</h3>
+                    <div class="skill-pills">
+                      <span>Python</span>
+                      <span>scikit-learn</span>
+                      <span>TensorFlow</span>
+                      <span>PyTorch</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="skill-group">
-                <h3>Language &amp; framework</h3>
-                <div class="skill-pills">
-                  <span>Python</span>
-                  <span>scikit-learn</span>
-                  <span>TensorFlow</span>
-                  <span>PyTorch</span>
+            </div>
+          </section>
+
+          <section class="tab-panel" id="panel-projects" role="tabpanel" aria-labelledby="tab-projects" data-panel="projects" hidden>
+            <div class="project-list">
+              <article class="project-case">
+                <h3>Spotify EDA + Clustering</h3>
+                <div class="project-meta">
+                  <span class="project-pill">Personal project</span>
+                  <span class="project-pill">Music data</span>
+                  <a
+                    href="https://github.com/amandasbrn/spotify-EDA-clustering"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Open Spotify EDA and Clustering"
+                    >github.com/amandasbrn/spotify-EDA-clustering</a
+                  >
                 </div>
-              </div>
+                <ul class="project-points">
+                  <li>Explored Spotify's 2023 dataset to understand song popularity, streaming behaviour, and platform performance.</li>
+                  <li>Used data visualization to surface patterns across playlists, charts, and cross-platform performance.</li>
+                  <li>Applied K-Means clustering and t-SNE to group songs by shared characteristics and popularity signals.</li>
+                  <li>Combined analytical storytelling with machine learning to make the dataset more interpretable.</li>
+                </ul>
+                <p class="project-detail"><strong>Tech stack:</strong> Python, pandas, seaborn, scikit-learn, K-Means, t-SNE</p>
+                <p class="project-detail"><strong>Focus:</strong> Exploratory data analysis, clustering, music data, visual storytelling</p>
+              </article>
+
+              <article class="project-case">
+                <h3>Taylor Swift Concert EDA + ML</h3>
+                <div class="project-meta">
+                  <span class="project-pill">Personal project</span>
+                  <span class="project-pill">Revenue prediction</span>
+                  <a
+                    href="https://github.com/amandasbrn/taylor-swift-concert-EDA-ML"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Open Taylor Swift Concert EDA and ML"
+                    >github.com/amandasbrn/taylor-swift-concert-EDA-ML</a
+                  >
+                </div>
+                <ul class="project-points">
+                  <li>Cleaned and analyzed concert data from multiple Taylor Swift tours, starting from a messy real-world dataset.</li>
+                  <li>Worked through preprocessing, feature engineering, and exploratory analysis to uncover attendance and revenue patterns.</li>
+                  <li>Built regression experiments, including decision tree models, to predict concert revenue.</li>
+                  <li>Extended the project into forecasting ideas for Taylor Swift's Eras Tour in Singapore.</li>
+                </ul>
+                <p class="project-detail"><strong>Tech stack:</strong> Python, pandas, seaborn, scikit-learn, decision tree regressor</p>
+                <p class="project-detail"><strong>Focus:</strong> Data wrangling, EDA, regression, feature engineering</p>
+              </article>
+
+              <article class="project-case">
+                <h3>Bank Deposit Decision Agent</h3>
+                <div class="project-meta">
+                  <span class="project-pill">Personal project</span>
+                  <span class="project-pill">Banking</span>
+                  <a
+                    href="https://github.com/amandasbrn/bank-deposit-classif-agent"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Open Bank Deposit Decision Agent"
+                    >github.com/amandasbrn/bank-deposit-classif-agent</a
+                  >
+                </div>
+                <ul class="project-points">
+                  <li>Built a supervised classification system to predict customer subscription likelihood for bank term deposit products.</li>
+                  <li>Designed an agentic AI pipeline where a rule-based decision agent translates model outputs into marketing actions.</li>
+                  <li>Integrated a large language model to explain agent decisions and generate actionable recommendations.</li>
+                  <li>Framed the system around practical decision support rather than prediction alone.</li>
+                </ul>
+                <p class="project-detail"><strong>Tech stack:</strong> Python, scikit-learn, Streamlit, LangChain, LLM integration</p>
+                <p class="project-detail"><strong>Focus:</strong> Supervised learning, classification, agentic AI, decision systems</p>
+              </article>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section class="projects" id="projects">
-          <div class="section-heading">
-            <p class="section-label">Data Science Projects</p>
-            <h2>a few data projects i want to highlight.</h2>
-          </div>
-          <div class="project-grid">
-            <article class="project-card">
-              <p class="project-type">Data Analysis</p>
-              <h3>Spotify EDA + Clustering</h3>
-              <p>
-                I used Spotify's 2023 dataset to explore song popularity,
-                cross-platform performance, and listening patterns through
-                visual analysis, K-Means clustering, and t-SNE.
-              </p>
-              <div class="tag-row">
-                <span>Python</span>
-                <span>EDA</span>
-                <span>K-Means</span>
-                <span>t-SNE</span>
-              </div>
-              <a
-                href="https://github.com/amandasbrn/spotify-EDA-clustering"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Open Spotify EDA and Clustering"
-                >View project</a
-              >
-            </article>
+          <section class="tab-panel" id="panel-experience" role="tabpanel" aria-labelledby="tab-experience" data-panel="experience" hidden>
+            <div class="experience-list">
+              <article class="experience-item">
+                <p class="experience-period">3+ years</p>
+                <h3>Business Intelligence Analyst</h3>
+                <p>
+                  Built experience across reporting, analytics, and translating
+                  business questions into data-driven insight. This is where I
+                  developed my foundation in turning messy data into something
+                  useful and actionable.
+                </p>
+              </article>
 
-            <article class="project-card">
-              <p class="project-type">Data Science</p>
-              <h3>Taylor Swift Concert EDA + ML</h3>
-              <p>
-                This started as a fun personal project and turned into one of
-                my favourite learning experiences in preprocessing, exploratory
-                analysis, feature engineering, and revenue prediction.
-              </p>
-              <div class="tag-row">
-                <span>Python</span>
-                <span>Data Wrangling</span>
-                <span>Decision Tree</span>
-              </div>
-              <a
-                href="https://github.com/amandasbrn/taylor-swift-concert-EDA-ML"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Open Taylor Swift Concert EDA and ML"
-                >View project</a
-              >
-            </article>
+              <article class="experience-item">
+                <p class="experience-period">1 year</p>
+                <h3>Data Scientist</h3>
+                <p>
+                  Worked more deeply with data wrangling, feature engineering,
+                  experimentation, and model building, while growing my interest
+                  in practical machine learning and AI applications.
+                </p>
+              </article>
 
-            <article class="project-card">
-              <p class="project-type">Agentic AI</p>
-              <h3>Bank Deposit Decision Agent</h3>
-              <p>
-                A project that reflects where I want to keep growing: combining
-                machine learning, decision logic, and LLM explanations into a
-                system that feels practical and genuinely useful.
-              </p>
-              <div class="tag-row">
-                <span>Scikit-learn</span>
-                <span>LangChain</span>
-                <span>Streamlit</span>
-              </div>
-              <a
-                href="https://github.com/amandasbrn/bank-deposit-classif-agent"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Open Bank Deposit Decision Agent"
-                >View project</a
-              >
-            </article>
-          </div>
-        </section>
-
-        <section class="section-card experience" id="experience">
-          <div class="section-heading">
-            <p class="section-label">Work Experience</p>
-            <h2>where i have been growing so far.</h2>
-          </div>
-          <div class="experience-list">
-            <article class="experience-item">
-              <p class="experience-period">3+ years</p>
-              <h3>Business Intelligence Analyst</h3>
-              <p>
-                Built experience across reporting, analytics, and translating
-                business questions into data-driven insight. This is where I
-                developed my foundation in turning messy data into something
-                useful and actionable.
-              </p>
-            </article>
-
-            <article class="experience-item">
-              <p class="experience-period">1 year</p>
-              <h3>Data Scientist</h3>
-              <p>
-                Worked more deeply with data wrangling, feature engineering,
-                experimentation, and model building, while growing my interest
-                in practical machine learning and AI applications.
-              </p>
-            </article>
-
-            <article class="experience-item">
-              <p class="experience-period">Current</p>
-              <h3>Master of Data Science, The University of Sydney</h3>
-              <p>
-                Expanding my skills in machine learning, AI engineering, and
-                applied problem-solving with the goal of building more robust
-                and intuitive systems.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="contact section-card" id="contact">
-          <div class="section-heading">
-            <p class="section-label">Contact</p>
-            <h2>let's connect.</h2>
-          </div>
-          <div class="contact-grid">
-            <p>
-              I am still building this space out, but these links are the best
-              places to see more of what I have been working on. I am always
-              happy to connect over data, AI, or interesting ideas ✨
-            </p>
-            <div class="contact-links">
-              <a
-                href="https://www.notion.so/dirasabrina/Dira-A-Sabrina-2e331c1fb4288090a8faf08827d0b5ca"
-                target="_blank"
-                rel="noreferrer"
-                >Portfolio</a
-              >
-              <a href="https://github.com/amandasbrn" target="_blank" rel="noreferrer"
-                >GitHub</a
-              >
+              <article class="experience-item">
+                <p class="experience-period">Current</p>
+                <h3>Master of Data Science, The University of Sydney</h3>
+                <p>
+                  Expanding my skills in machine learning, AI engineering, and
+                  applied problem-solving with the goal of building more robust
+                  and intuitive systems.
+                </p>
+              </article>
             </div>
-          </div>
+          </section>
         </section>
       </main>
 
