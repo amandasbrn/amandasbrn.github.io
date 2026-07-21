@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website for Dira Amanda Sabrina, a data scientist with experience in machine learning, analytics, and business intelligence."
+    />
+    <title>Dira Amanda Sabrina | Data Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" id="top">
+        <a class="brand" href="#top">Dira Amanda Sabrina</a>
+
+        <nav class="main-nav" aria-label="Primary">
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+        </nav>
+
+        <a class="header-link" href="assets/Dira_A_Sabrina_CV.pdf" target="_blank" rel="noreferrer">
+          CV
+        </a>
+      </header>
+
+      <main>
+        <section class="hero section">
+          <p class="eyebrow">AI / ML Engineer</p>
+          <h1>hi, i'm dira.</h1>
+          <p class="hero-text">
+            An AI/ML engineer building practical machine learning systems, thoughtful
+            analytics, and useful AI products.
+          </p>
+        </section>
+
+        <section class="section content-section" id="experience">
+          <div class="section-heading">
+            <h2>my professional experience.</h2>
+          </div>
+
+          <div class="list-grid">
+            <article class="content-card">
+              <p class="meta">Nov 2025 – Dec 2025</p>
+              <h3>Project Leader · Industry Experience Program</h3>
+              <p>
+                Led a five-person team delivering a digital marketing strategy for an
+                Australian health-tech startup, covering market analysis, brand positioning,
+                and partnership opportunities.
+              </p>
+            </article>
+
+            <article class="content-card">
+              <p class="meta">Aug 2024 – May 2025</p>
+              <h3>Machine Learning Engineer · Metrodata</h3>
+              <p>
+                Improved a banking profit prediction model to 85% accuracy and built a
+                SageMaker-based classification pipeline for manufacturing quality control.
+              </p>
+            </article>
+
+            <article class="content-card">
+              <p class="meta">Mar 2021 – Jul 2024</p>
+              <h3>Business Intelligence Consultant · Metrodata</h3>
+              <p>
+                Delivered 15+ Power BI dashboards for FMCG, banking, manufacturing, and telco
+                clients using SQL, Excel, and business-focused KPI design.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section content-section" id="projects">
+          <div class="section-heading">
+            <h2>Selected projects in AI, NLP, and applied machine learning.</h2>
+          </div>
+
+          <div class="list-grid">
+            <article class="content-card">
+              <p class="meta">Agentic AI</p>
+              <h3>Marketing Decision System for Bank Deposit Prediction</h3>
+              <p>
+                Built an end-to-end agentic system combining a supervised classifier, a
+                rule-based decision layer, and an LLM explainer for outreach guidance.
+              </p>
+              <a href="https://github.com/amandasbrn/bank-deposit-classif-agent" target="_blank" rel="noreferrer">
+                View project
+              </a>
+            </article>
+
+            <article class="content-card">
+              <p class="meta">LLM Product</p>
+              <h3>LLM-Powered Document Summariser</h3>
+              <p>
+                Built a summarisation web app using Gemini API and AWS services, with backend
+                infrastructure designed around a production-oriented architecture.
+              </p>
+            </article>
+
+            <article class="content-card">
+              <p class="meta">Consumer AI</p>
+              <h3>AI Meal Planner</h3>
+              <p>
+                Developed a recipe recommendation app that accepts ingredient input, uses
+                grounded Gemini responses, and stores results in SQLite.
+              </p>
+              <a href="https://github.com/amandasbrn/ai-meal-planner" target="_blank" rel="noreferrer">
+                View project
+              </a>
+            </article>
+
+            <article class="content-card">
+              <p class="meta">NLP</p>
+              <h3>Multi-Task LSTM for Text-to-SQL Generation</h3>
+              <p>
+                Trained a PyTorch model that jointly predicts named entity tags and SQL query
+                templates from natural language questions.
+              </p>
+              <a
+                href="https://github.com/amandasbrn/multitask-lstm-nlp-assignment3"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View project
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section content-section" id="education">
+          <div class="section-heading">
+            <h2>Academic background in data science and computer science.</h2>
+          </div>
+
+          <div class="list-grid">
+            <article class="content-card">
+              <p class="meta">Aug 2025 – Present</p>
+              <h3>Master of Data Science · The University of Sydney</h3>
+              <p>
+                Studying natural language processing, deep learning, cloud computing, and
+                supervised and unsupervised machine learning.
+              </p>
+            </article>
+
+            <article class="content-card">
+              <p class="meta">2021</p>
+              <h3>Bachelor of Computer Science · Universitas Tarumanagara</h3>
+              <p>
+                Specialized in business intelligence and received 1st Place Best Thesis Award
+                for an end-to-end air pollution monitoring and forecasting dashboard.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Dira Amanda Sabrina</p>
+        <a href="mailto:dirasabrina@gmail.com">dirasabrina@gmail.com</a>
+        <p>© <span id="year"></span></p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
