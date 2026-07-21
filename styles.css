@@ -81,6 +81,11 @@ p {
   gap: 12px;
 }
 
+.nav-tooltip-item {
+  position: relative;
+  display: inline-flex;
+}
+
 .tab-button,
 .tab-link {
   padding: 10px 14px;
@@ -122,6 +127,42 @@ p {
   background: var(--deep-graphite);
 }
 
+.nav-tooltip {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  width: min(210px, 58vw);
+  padding: 10px 12px;
+  border: 1px solid rgba(175, 163, 214, 0.45);
+  background: rgba(248, 247, 252, 0.98);
+  color: var(--deep-graphite);
+  transform: translateX(-50%) translateY(6px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 180ms ease, transform 180ms ease, visibility 180ms ease;
+  z-index: 10;
+}
+
+.nav-tooltip-item:hover .nav-tooltip,
+.nav-tooltip-item:focus-within .nav-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.nav-tooltip-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.nav-tooltip-text {
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
 .header-link {
   border: 1px solid var(--line);
   padding: 8px 14px;
@@ -154,18 +195,20 @@ p {
   margin-top: 14px;
   font-size: clamp(2.5rem, 6vw, 4.25rem);
   line-height: 1.1;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.02em;
+  margin-bottom: 18px;
   max-width: none;
 }
 
 .hero-text {
   /* max-width: 36ch; */
   max-width: none;
-  margin-top: 12px;
+  margin-top: 0;
   color: var(--deep-graphite);
-  font-size: clamp(1rem, 2.4vw, 1.2rem);
+  font-size: clamp(0.95rem, 1.9vw, 1.08rem);
   line-height: 1.6;
   font-weight: 300;
+  letter-spacing: 0.03em;
 }
 
 .stack-icons {
