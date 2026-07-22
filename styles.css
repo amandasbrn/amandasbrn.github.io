@@ -247,6 +247,10 @@ p {
   max-width: none;
 }
 
+.section-subheading {
+  margin-top: 28px;
+}
+
 .social-links {
   display: flex;
   align-items: center;
