@@ -623,22 +623,28 @@ p {
 
   .tab-nav {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     align-items: start;
     gap: 8px;
   }
 
   .nav-tooltip-item {
+    display: block;
     width: 100%;
   }
 
   .tab-button,
   .tab-link {
+    min-width: 0;
     width: 100%;
     justify-content: center;
     padding: 8px 8px;
     font-size: 0.72rem;
     letter-spacing: 0.02em;
+  }
+
+  .nav-tooltip {
+    display: none;
   }
 
   .section-heading h2 {
