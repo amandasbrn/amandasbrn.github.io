@@ -516,7 +516,7 @@ p {
   }
 
   .section-heading h2 {
-    font-size: clamp(1.1rem, 8vw, 1.75rem);
+    font-size: clamp(1.3rem, 8vw, 1.85rem);
   }
 
   .text-list,
@@ -567,7 +567,8 @@ p {
 
   .project-link {
     gap: 6px;
-    font-size: 0.76rem;
+    font-size: 0.86rem;
+    font-weight: 400;
   }
 
   .project-link svg {
@@ -655,7 +656,7 @@ p {
   }
 
   .section-heading h2 {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .list-item,
@@ -675,8 +676,9 @@ p {
   }
 
   .project-link {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     gap: 5px;
+    font-weight: 400;
   }
 
   .project-link svg {
