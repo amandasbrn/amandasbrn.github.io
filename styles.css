@@ -628,21 +628,22 @@ p {
   }
 
   .tab-nav {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    align-items: start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 8px;
   }
 
   .nav-tooltip-item {
-    display: block;
-    width: 100%;
+    display: inline-flex;
+    width: auto;
   }
 
   .tab-button,
   .tab-link {
-    min-width: 0;
-    width: 100%;
+    min-width: auto;
+    width: auto;
     justify-content: center;
     padding: 8px 8px;
     font-size: 0.72rem;
