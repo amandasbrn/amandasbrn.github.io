@@ -255,6 +255,8 @@ p {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .social-link {
@@ -281,6 +283,30 @@ p {
 .social-link svg {
   width: 18px;
   height: 18px;
+}
+
+.resume-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(46, 44, 57, 0.12);
+  background: rgba(248, 247, 252, 0.88);
+  color: var(--deep-graphite);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease,
+    transform 180ms ease;
+}
+
+.resume-link:hover {
+  color: var(--soft-amethyst);
+  border-color: rgba(175, 163, 214, 0.72);
+  background: rgba(213, 206, 236, 0.34);
+  transform: translateY(-1px);
 }
 
 .tab-panels {
@@ -428,6 +454,12 @@ p {
     height: 15px;
   }
 
+  .resume-link {
+    min-height: 34px;
+    padding: 0 12px;
+    font-size: 0.76rem;
+  }
+
   .section {
     padding-top: 28px;
   }
@@ -557,6 +589,16 @@ p {
   .site-header,
   .site-footer {
     gap: 8px;
+  }
+
+  .social-links {
+    gap: 8px;
+  }
+
+  .resume-link {
+    min-height: 32px;
+    padding: 0 10px;
+    font-size: 0.72rem;
   }
 
   .hero h1 {
