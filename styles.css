@@ -397,7 +397,7 @@ p {
 
 @media (max-width: 720px) {
   .page-shell {
-    width: calc(100% - 24px);
+    width: calc(100% - 28px);
     margin: 12px auto;
     padding-bottom: 24px;
   }
@@ -529,13 +529,13 @@ p {
 
   .project-link {
     gap: 6px;
-    font-size: 0.84rem;
+    font-size: 0.76rem;
   }
 
   .project-link svg {
-    width: 14px;
-    height: 14px;
-    flex-basis: 14px;
+    width: 13px;
+    height: 13px;
+    flex-basis: 13px;
   }
 
   .nav-tooltip {
@@ -550,7 +550,7 @@ p {
 
 @media (max-width: 480px) {
   .page-shell {
-    width: calc(100% - 20px);
+    width: calc(100% - 24px);
     margin: 10px auto;
   }
 
@@ -580,13 +580,23 @@ p {
   }
 
   .tab-nav {
-    gap: 8px 10px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: start;
+    gap: 8px;
+  }
+
+  .nav-tooltip-item {
+    width: 100%;
   }
 
   .tab-button,
   .tab-link {
-    padding: 8px 11px;
-    font-size: 0.78rem;
+    width: 100%;
+    justify-content: center;
+    padding: 8px 8px;
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
   }
 
   .section-heading h2 {
@@ -607,6 +617,17 @@ p {
   .list-item p:last-of-type {
     font-size: 0.8rem;
     line-height: 1.68;
+  }
+
+  .project-link {
+    font-size: 0.7rem;
+    gap: 5px;
+  }
+
+  .project-link svg {
+    width: 12px;
+    height: 12px;
+    flex-basis: 12px;
   }
 
   .tag-list li {
