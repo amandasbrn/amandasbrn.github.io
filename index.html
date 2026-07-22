@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1f1b28" />
     <meta
       name="description"
       content="Portfolio website for Dira Amanda Sabrina, a data scientist with experience in machine learning, analytics, and business intelligence."
@@ -67,6 +68,18 @@
           >
             📥 Resume
           </a>
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            type="button"
+            aria-label="Switch to light mode"
+            aria-pressed="true"
+          >
+            <span class="theme-toggle-track-icon" aria-hidden="true">☀</span>
+            <span class="theme-toggle-thumb" aria-hidden="true">
+              <span class="theme-toggle-thumb-icon">☾</span>
+            </span>
+          </button>
         </div>
       </header>
 
@@ -78,28 +91,29 @@
             <p class="hero-text">
               Building AI products that hold up outside of notebooks :)
             </p>
+            <p class="hero-text">Based in JKT/SYD</p>
 
             <ul class="stack-icons" aria-label="Tech Stack">
               <li>
-                <img src="https://skillicons.dev/icons?i=aws&theme=light" alt="AWS" />
+                <img src="https://skillicons.dev/icons?i=aws&theme=dark" alt="AWS" data-icon="aws" />
               </li>
               <li>
-                <img src="https://skillicons.dev/icons?i=azure&theme=light" alt="Azure" />
+                <img src="https://skillicons.dev/icons?i=azure&theme=dark" alt="Azure" data-icon="azure" />
               </li>
               <li>
-                <img src="https://skillicons.dev/icons?i=git&theme=light" alt="Git" />
+                <img src="https://skillicons.dev/icons?i=git&theme=dark" alt="Git" data-icon="git" />
               </li>
               <li>
-                <img src="https://skillicons.dev/icons?i=vscode&theme=light" alt="VS Code" />
+                <img src="https://skillicons.dev/icons?i=vscode&theme=dark" alt="VS Code" data-icon="vscode" />
               </li>
               <li>
-                <img src="https://skillicons.dev/icons?i=py&theme=light" alt="Python" />
+                <img src="https://skillicons.dev/icons?i=py&theme=dark" alt="Python" data-icon="py" />
               </li>
               <li>
-                <img src="https://skillicons.dev/icons?i=sklearn&theme=light" alt="scikit-learn" />
+                <img src="https://skillicons.dev/icons?i=sklearn&theme=dark" alt="scikit-learn" data-icon="sklearn" />
               </li>
               <li>
-                <img src="https://skillicons.dev/icons?i=tensorflow&theme=light" alt="TensorFlow" />
+                <img src="https://skillicons.dev/icons?i=tensorflow&theme=dark" alt="TensorFlow" data-icon="tensorflow" />
               </li>
             </ul>
           </div>
