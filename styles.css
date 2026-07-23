@@ -424,6 +424,13 @@ p {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
   margin-top: 24px;
+  align-items: start;
+}
+
+.project-grid {
+  display: block;
+  column-count: 2;
+  column-gap: 16px;
 }
 
 .text-list {
@@ -440,10 +447,44 @@ p {
 }
 
 .content-card {
-  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  height: fit-content;
+  padding: 0;
   background: var(--surface);
   border: 1px solid var(--line);
   transition: background 220ms ease, border-color 220ms ease;
+  overflow: hidden;
+}
+
+.project-grid > .content-card {
+  break-inside: avoid;
+  margin: 0 0 16px;
+  width: 100%;
+}
+
+.content-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  padding: 22px;
+  text-align: center;
+}
+
+.content-card--with-preview .content-card-body {
+  border-top: 1px solid var(--line);
+}
+
+.project-preview-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 220px;
+  padding: 14px;
+  background: #ffffff;
 }
 
 .content-card h3,
@@ -460,6 +501,17 @@ p {
   color: var(--muted);
   line-height: 1.85;
   font-size: 0.95rem;
+}
+
+.project-preview {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  border: 0;
+  background: #ffffff;
+  object-fit: contain;
+  object-position: center;
 }
 
 .tag-list {
@@ -486,9 +538,10 @@ p {
 
 .project-tech {
   margin-top: 16px;
+  justify-content: center;
 }
 
-.content-card a {
+.content-card-body > a {
   margin-top: 16px;
   font-size: 0.92rem;
   font-weight: 600;
@@ -498,6 +551,7 @@ p {
 .project-links {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 12px 18px;
   margin-top: 16px;
 }
@@ -647,9 +701,23 @@ p {
     grid-template-columns: 1fr;
   }
 
+  .project-grid {
+    display: block;
+    column-count: 1;
+  }
+
   .list-item,
   .content-card {
+    padding: 0;
+  }
+
+  .content-card-body {
     padding: 18px;
+  }
+
+  .project-preview-frame {
+    height: 188px;
+    padding: 12px;
   }
 
   .content-card h3,
@@ -802,7 +870,16 @@ p {
 
   .list-item,
   .content-card {
+    padding: 0;
+  }
+
+  .content-card-body {
     padding: 16px;
+  }
+
+  .project-preview-frame {
+    height: 168px;
+    padding: 10px;
   }
 
   .content-card h3,
