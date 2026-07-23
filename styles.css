@@ -712,7 +712,7 @@ p {
     padding: 0;
   }
 
-  .list-item {
+  .text-list > .list-item {
     padding: 18px;
   }
 
@@ -877,7 +877,7 @@ p {
     padding: 0;
   }
 
-  .list-item {
+  .text-list > .list-item {
     padding: 16px;
   }
 
