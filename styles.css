@@ -708,9 +708,12 @@ p {
     column-count: 1;
   }
 
-  .list-item,
   .content-card {
     padding: 0;
+  }
+
+  .list-item {
+    padding: 18px;
   }
 
   .content-card-body {
@@ -870,9 +873,12 @@ p {
     font-size: 1.3rem;
   }
 
-  .list-item,
   .content-card {
     padding: 0;
+  }
+
+  .list-item {
+    padding: 16px;
   }
 
   .content-card-body {
