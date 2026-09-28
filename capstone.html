@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1f1b28" />
+    <meta
+      name="description"
+      content="Case study for Dira Amanda Sabrina's AI-powered marketplace recommendation system university capstone."
+    />
+    <title>AI-Powered Marketplace Recommendation System · Dira</title>
+    <link rel="icon" type="image/gif" href="https://64.media.tumblr.com/tumblr_ll7x3bnod91qi6qow.gif" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Outfit:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260928d" />
+  </head>
+  <body>
+    <div class="page-shell case-study-shell">
+      <header class="site-header case-study-nav">
+        <a class="back-link" href="index.html#panel-projects">← Back to projects</a>
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          type="button"
+          aria-label="Switch to light mode"
+          aria-pressed="true"
+        >
+          <span class="theme-toggle-track-icon" aria-hidden="true">☀</span>
+          <span class="theme-toggle-thumb" aria-hidden="true">
+            <span class="theme-toggle-thumb-icon">☾</span>
+          </span>
+        </button>
+      </header>
+
+      <main>
+        <article class="case-study">
+          <header class="case-study-hero section">
+            <p class="meta">University Capstone Project · In Progress</p>
+            <h1>AI-Powered Marketplace Recommendation System</h1>
+            <p class="case-study-lead">
+              A pilot AI service for personalised product discovery, seller price guidance, and
+              explanations grounded in model evidence.
+            </p>
+
+            <dl class="case-study-facts">
+              <div>
+                <dt>Role</dt>
+                <dd>AI/ML Engineer</dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd>Recommender developed; pricing component in progress</dd>
+              </div>
+              <div>
+                <dt>Pilot scale</dt>
+                <dd>100,000+ marketplace rows</dd>
+              </div>
+            </dl>
+          </header>
+
+          <div class="business-value-strip case-study-value">
+            <span>Core business value</span>
+            <p>
+              Helps buyers find relevant products and gives sellers evidence-based price
+              guidance, making marketplace decisions clearer on both sides.
+            </p>
+          </div>
+
+          <section class="case-section" aria-labelledby="problem-title">
+            <div class="case-section-heading">
+              <p class="detail-kicker">01 · The challenge</p>
+              <h2 id="problem-title">Better discovery and pricing decisions</h2>
+            </div>
+            <div class="case-section-copy">
+              <p>
+                Buyers can struggle to find relevant items in a large catalogue, while sellers may
+                lack clear pricing benchmarks. The AI layer turns marketplace data into:
+              </p>
+              <ul class="detail-list">
+                <li>Listings matched to buyer interests and search intent.</li>
+                <li>Price guidance supported by comparable listings.</li>
+                <li>Short explanations of why each result was produced.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="case-section" aria-labelledby="role-title">
+            <div class="case-section-heading">
+              <p class="detail-kicker">02 · My ownership</p>
+              <h2 id="role-title">The AI/ML layer</h2>
+            </div>
+            <div class="case-section-copy">
+              <p>
+                I own the machine learning components, then
+                coordinate their data and API integration with the wider team and whole marketplace.
+              </p>
+              <ul class="detail-list detail-list-columns">
+                <li>Personalised and cold-start recommendations</li>
+                <li>Seller pricing experiments and evaluation</li>
+                <li>Reusable feature and model pipelines</li>
+                <li>FastAPI serving endpoints</li>
+                <li>Grounded LLM explanations</li>
+                <li>Data and application-team integration</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="case-section case-section-stacked" aria-labelledby="highlights-title">
+            <div class="case-section-heading">
+              <p class="detail-kicker">03 · What it does</p>
+              <h2 id="highlights-title">Four practical AI capabilities</h2>
+            </div>
+            <div class="highlight-grid">
+              <article>
+                <h3>Personalisation</h3>
+                <p>Ranks listings using user history, content, location, and price preferences.</p>
+              </article>
+              <article>
+                <h3>Cold-start handling</h3>
+                <p>Uses popular listings when consent or interaction history is unavailable.</p>
+              </article>
+              <article>
+                <h3>Price guidance</h3>
+                <p>Combines comparable listings with a listing-specific model estimate.</p>
+              </article>
+              <article>
+                <h3>Grounded explanations</h3>
+                <p>Explains model evidence without letting the LLM invent recommendations.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="case-split" aria-label="Buyer and seller AI components">
+            <article class="case-component">
+              <p class="detail-kicker">04 · Buyer recommender</p>
+              <h2>Relevant results for known and new users</h2>
+              <p>
+                For consenting users with enough history, the system builds a preference profile
+                from viewed listings and ranks candidates by similarity. New or non-consenting
+                users receive globally popular listings instead.
+              </p>
+              <p>
+                Each API response includes the recommendation type, ranked listings, and a short
+                explanation.
+              </p>
+            </article>
+
+            <article class="case-component">
+              <p class="detail-kicker">05 · Seller pricing</p>
+              <h2>Evidence-based guidance <span class="status-inline">In progress</span></h2>
+              <p>
+                The pricing component is being designed to combine comparable listings, a
+                listing-specific estimate, and the factors that influenced that estimate.
+              </p>
+              <ul class="detail-list">
+                <li>Group relevant comparable listings.</li>
+                <li>Estimate a price and typical range.</li>
+                <li>Explain only evidence produced by the model.</li>
+              </ul>
+            </article>
+          </section>
+
+          <section class="case-section" aria-labelledby="integration-title">
+            <div class="case-section-heading">
+              <p class="detail-kicker">06 · Search + explanation</p>
+              <h2 id="integration-title">Personal relevance, clearly explained</h2>
+            </div>
+            <div class="case-section-copy">
+              <p>
+                The marketplace search component retrieves candidates from a text or image query.
+                My recommender re-ranks those candidates using the user's preference profile. I do
+                not own the complete semantic-search system.
+              </p>
+              <p>
+                Gemini then turns structured model evidence into plain-language explanations. It
+                explains the result; it does not choose the product or price.
+              </p>
+              <div class="comparison-row">
+                <p><strong>Search relevance</strong> Matches the current query.</p>
+                <p><strong>Personal relevance</strong> Matches previous interests.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="case-section case-section-stacked" aria-labelledby="architecture-title">
+            <div class="case-section-heading">
+              <p class="detail-kicker">07 · Architecture</p>
+              <h2 id="architecture-title">From request to grounded response</h2>
+            </div>
+            <figure class="architecture-figure">
+              <ol class="architecture-flow" aria-label="Main application flow">
+                <li>Marketplace UI</li>
+                <li>Application Backend</li>
+                <li>FastAPI AI Service</li>
+                <li>Recommender <span>or</span> Price Estimator</li>
+                <li>Gemini Explanation</li>
+                <li>Structured Response</li>
+              </ol>
+              <figcaption>
+                <span>Supporting inputs</span>
+                <ul class="source-list">
+                  <li>Listings</li>
+                  <li>User interactions</li>
+                  <li>Search candidate IDs</li>
+                  <li>Saved model artefacts</li>
+                </ul>
+              </figcaption>
+            </figure>
+          </section>
+
+          <section class="case-section" aria-labelledby="workflow-title">
+            <div class="case-section-heading">
+              <p class="detail-kicker">08 · Engineering workflow</p>
+              <h2 id="workflow-title">Built as a reusable service</h2>
+            </div>
+            <ol class="workflow-list">
+              <li>Validate listing and interaction data.</li>
+              <li>Create reusable model features.</li>
+              <li>Train and evaluate AI components.</li>
+              <li>Save and load model artefacts.</li>
+              <li>Serve results and grounded explanations through FastAPI.</li>
+              <li>Log interactions for future evaluation and retraining.</li>
+            </ol>
+          </section>
+
+          <section class="case-section" aria-labelledby="stack-title">
+            <div class="case-section-heading">
+              <p class="detail-kicker">09 · Technology</p>
+              <h2 id="stack-title">Implementation and current design</h2>
+            </div>
+            <div class="case-section-copy stack-groups">
+              <div class="stack-group">
+                <p class="stack-label">Implemented / active</p>
+                <ul class="tag-list detail-tech">
+                  <li>Python</li>
+                  <li>pandas</li>
+                  <li>scikit-learn</li>
+                  <li>FastAPI</li>
+                  <li>TF-IDF</li>
+                  <li>Cosine similarity</li>
+                  <li>Gemini API</li>
+                  <li>joblib</li>
+                  <li>Parquet</li>
+                  <li>Git and GitHub</li>
+                </ul>
+              </div>
+              <div class="stack-group">
+                <p class="stack-label">Pricing design · In progress</p>
+                <ul class="tag-list detail-tech">
+                  <li>K-Means</li>
+                  <li>Random Forest</li>
+                  <li>SHAP</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </article>
+      </main>
+
+      <footer class="site-footer">
+        <p>Dira Amanda Sabrina</p>
+        <a href="mailto:dirasabrina@gmail.com">dirasabrina@gmail.com</a>
+        <p>© <span id="year"></span></p>
+      </footer>
+    </div>
+
+    <script src="script.js?v=20260928b"></script>
+  </body>
+</html>

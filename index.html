@@ -13,10 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto+Mono:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Outfit:wght@300;400;500;600&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260723c" />
+    <link rel="stylesheet" href="styles.css?v=20260928d" />
   </head>
   <body>
     <div class="page-shell">
@@ -142,6 +142,9 @@
                 </p>
               </div>
             </div>
+            <button class="tab-button" id="tab-research" type="button" role="tab" aria-selected="false" aria-controls="panel-research" data-tab-target="panel-research" tabindex="-1">
+              Research/field interest
+            </button>
           </nav>
         </section>
 
@@ -230,48 +233,39 @@
               <h2>projects in applied ML/AI.</h2>
             </div>
 
-            <div class="list-grid project-grid">
-              <article class="content-card">
-                <div class="content-card-body">
-                  <p class="meta">LLM Research</p>
-                  <h3>Preference-Tuned Study Assistant</h3>
-                  <p>
-                    A study assistant experiment focused on making responses feel more genuinely
-                    helpful, grounded, and aligned with how people actually learn.
-                  </p>
-                  <ul class="tag-list project-tech">
-                    <li>Python</li>
-                    <li>LLM</li>
-                    <li>DPO Preference Tuning</li>
-                  </ul>
-                  <div class="project-links">
-                    <a class="project-link" href="https://github.com/amandasbrn/preference-tuned-study-assistant" target="_blank" rel="noreferrer">
-                      <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path
-                          d="M12 2C6.48 2 2 6.6 2 12.27c0 4.54 2.87 8.39 6.84 9.75.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.09 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05A9.27 9.27 0 0 1 12 6.84c.85 0 1.7.12 2.5.35 1.9-1.32 2.74-1.05 2.74-1.05.56 1.42.21 2.47.11 2.73.64.72 1.03 1.63 1.03 2.75 0 3.96-2.34 4.82-4.57 5.08.36.32.68.95.68 1.92 0 1.39-.01 2.5-.01 2.84 0 .27.18.6.69.49A10.05 10.05 0 0 0 22 12.27C22 6.6 17.52 2 12 2Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                      <span>View project</span>
-                    </a>
-                    <a
-                      class="project-link"
-                      href="https://www.linkedin.com/posts/dira-amanda_i-recently-fine-tuned-a-small-language-model-activity-7483388845946716163-hpVH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC51gBABeDvWQr5VdOverwy7MjD6Cgk5-Sc"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path
-                          d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.38a1.56 1.56 0 0 1 0 3.12ZM5.6 18.4V10h2.68v8.4H5.6Zm4.37 0V10h2.57v1.15h.04c.36-.68 1.23-1.4 2.53-1.4 2.7 0 3.2 1.78 3.2 4.1v4.55h-2.68v-4.03c0-.96-.02-2.2-1.34-2.2-1.34 0-1.55 1.04-1.55 2.12v4.11H9.97Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                      <span>Read article</span>
-                    </a>
-                  </div>
+            <article class="content-card featured-project">
+              <div class="featured-project-preview" aria-hidden="true">
+                <span>Marketplace</span>
+                <span class="featured-arrow">→</span>
+                <span>FastAPI AI</span>
+                <span class="featured-arrow">→</span>
+                <span>Grounded response</span>
+              </div>
+              <div class="content-card-body featured-project-body">
+                <div class="featured-project-heading">
+                  <p class="meta">Featured · University Capstone · In Progress</p>
+                  <h3>AI-Powered Marketplace Recommendation System</h3>
                 </div>
-              </article>
+                <p>
+                  An end-to-end AI layer for a multi-domain marketplace that helps buyers discover
+                  relevant listings and helps sellers estimate appropriate prices. The system
+                  combines personalised recommendations, comparable-listing price estimation,
+                  semantic-search integration, and evidence-based LLM explanations.
+                </p>
+                <div class="featured-project-footer">
+                  <div class="featured-project-facts" aria-label="Project highlights">
+                    <span><strong>Role</strong> AI/ML Engineer</span>
+                    <span><strong>Pilot scale</strong> 100,000+ rows</span>
+                  </div>
+                  <a class="case-study-link" href="capstone.html">
+                    <span>View case study</span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
 
+            <div class="list-grid project-grid">
               <article class="content-card content-card--with-preview">
                 <div class="project-preview-frame">
                   <img
@@ -307,6 +301,47 @@
                     <a
                       class="project-link"
                       href="https://www.linkedin.com/posts/dira-amanda_machinelearning-aiengineering-datascience-activity-7475422961005588480-wi1l?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC51gBABeDvWQr5VdOverwy7MjD6Cgk5-Sc"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.38a1.56 1.56 0 0 1 0 3.12ZM5.6 18.4V10h2.68v8.4H5.6Zm4.37 0V10h2.57v1.15h.04c.36-.68 1.23-1.4 2.53-1.4 2.7 0 3.2 1.78 3.2 4.1v4.55h-2.68v-4.03c0-.96-.02-2.2-1.34-2.2-1.34 0-1.55 1.04-1.55 2.12v4.11H9.97Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                      <span>Read article</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="content-card">
+                <div class="content-card-body">
+                  <p class="meta">LLM Research</p>
+                  <h3>Preference-Tuned Study Assistant</h3>
+                  <p>
+                    A study assistant experiment focused on making responses feel more genuinely
+                    helpful, grounded, and aligned with how people actually learn.
+                  </p>
+                  <ul class="tag-list project-tech">
+                    <li>Python</li>
+                    <li>LLM</li>
+                    <li>DPO Preference Tuning</li>
+                  </ul>
+                  <div class="project-links">
+                    <a class="project-link" href="https://github.com/amandasbrn/preference-tuned-study-assistant" target="_blank" rel="noreferrer">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 2C6.48 2 2 6.6 2 12.27c0 4.54 2.87 8.39 6.84 9.75.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.09 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05A9.27 9.27 0 0 1 12 6.84c.85 0 1.7.12 2.5.35 1.9-1.32 2.74-1.05 2.74-1.05.56 1.42.21 2.47.11 2.73.64.72 1.03 1.63 1.03 2.75 0 3.96-2.34 4.82-4.57 5.08.36.32.68.95.68 1.92 0 1.39-.01 2.5-.01 2.84 0 .27.18.6.69.49A10.05 10.05 0 0 0 22 12.27C22 6.6 17.52 2 12 2Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                      <span>View project</span>
+                    </a>
+                    <a
+                      class="project-link"
+                      href="https://www.linkedin.com/posts/dira-amanda_i-recently-fine-tuned-a-small-language-model-activity-7483388845946716163-hpVH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC51gBABeDvWQr5VdOverwy7MjD6Cgk5-Sc"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -433,6 +468,121 @@
             </div>
           </section>
 
+          <section class="section content-section tab-panel research-panel" id="panel-research" role="tabpanel" aria-labelledby="tab-research" hidden>
+            <div class="section-heading">
+              <h2>research/field interest.</h2>
+            </div>
+
+            <article class="research-intro">
+              <p class="meta">Research focus</p>
+              <h3>AI that understands people and context.</h3>
+              <p>
+                I am interested in human-centered AI systems that learn from preferences, behaviour,
+                and context to personalise experiences, explain recommendations, and support better
+                decisions, not just build models to improve a benchmark.
+              </p>
+              <div class="research-signature" aria-label="Recurring research theme">
+                <span>User or context</span>
+                <span aria-hidden="true">→</span>
+                <span>Understanding</span>
+                <span aria-hidden="true">→</span>
+                <span>Personalisation or reasoning</span>
+                <span aria-hidden="true">→</span>
+                <span>Decision support</span>
+              </div>
+            </article>
+
+            <div class="research-heading">
+              <p class="meta">Core directions</p>
+              <h3>Three connected areas I want to explore.</h3>
+            </div>
+
+            <div class="research-direction-grid">
+              <article class="research-card">
+                <p class="research-number">01</p>
+                <h3>Human-Centered AI</h3>
+                <p>
+                  Designing useful, understandable AI around human needs, interaction, trust, and
+                  decision-making alongside model performance.
+                </p>
+              </article>
+
+              <article class="research-card">
+                <p class="research-number">02</p>
+                <h3>Personalized and Context-Aware AI</h3>
+                <p>
+                  Building systems that adapt to preferences, previous behaviour, current context,
+                  and available information instead of returning the same output to everyone.
+                </p>
+              </article>
+
+              <article class="research-card">
+                <p class="research-number">03</p>
+                <h3>Multimodal Intelligent Systems</h3>
+                <p>
+                  Combining text, images, behaviour, location, history, and structured data to
+                  understand users and situations more completely.
+                </p>
+              </article>
+            </div>
+
+            <div class="research-heading">
+              <p class="meta">Evidence in my work</p>
+              <h3>The same questions appear across different projects.</h3>
+            </div>
+
+            <div class="research-direction-grid research-proof-grid">
+              <article class="research-card">
+                <p class="meta">Marketplace capstone</p>
+                <h3>Personalised discovery</h3>
+                <p>
+                  Uses interaction history and listing context to rank search candidates, handle
+                  cold starts, and explain results with grounded evidence.
+                </p>
+              </article>
+
+              <article class="research-card">
+                <p class="meta">Study assistant</p>
+                <h3>Preference-aware adaptation</h3>
+                <p>
+                  Uses LoRA, preference optimisation, and human evaluation to shape responses around
+                  how a user prefers to learn.
+                </p>
+              </article>
+
+              <article class="research-card">
+                <p class="meta">BalikAman</p>
+                <h3>Contextual decision support</h3>
+                <p>
+                  Combines journey and environmental signals to recommend routes that consider
+                  safety context, not only distance or travel time.
+                </p>
+              </article>
+            </div>
+
+            <article class="research-current research-current-compact">
+              <div>
+                <p class="meta">Current direction</p>
+                <h3>Understand, adapt, explain, support.</h3>
+                <blockquote>
+                  Human-centered AI with an interest in personalized, context-aware, and multimodal
+                  intelligent systems.
+                </blockquote>
+                <p>
+                  I am keeping the application domain open while I identify a research problem worth
+                  investigating deeply.
+                </p>
+              </div>
+              <ol class="research-ladder">
+                <li>Artificial Intelligence</li>
+                <li>Human-Centered AI</li>
+                <li>Personalized &amp; Context-Aware AI</li>
+                <li>Multimodal Intelligent Systems</li>
+                <li>Future research problem</li>
+              </ol>
+            </article>
+          </section>
+
         </div>
       </main>
 
@@ -443,6 +593,6 @@
       </footer>
     </div>
 
-    <script src="script.js?v=20260723c"></script>
+    <script src="script.js?v=20260928b"></script>
   </body>
 </html>

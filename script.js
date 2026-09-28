@@ -72,6 +72,33 @@ function activateTab(targetId) {
 
 tabButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    activateTab(button.dataset.tabTarget);
+    const targetId = button.dataset.tabTarget;
+    activateTab(targetId);
+    window.history.replaceState(null, "", `#${targetId}`);
+  });
+
+  button.addEventListener("keydown", (event) => {
+    const currentIndex = tabButtons.indexOf(button);
+    let nextIndex;
+
+    if (event.key === "ArrowRight") nextIndex = (currentIndex + 1) % tabButtons.length;
+    if (event.key === "ArrowLeft") nextIndex = (currentIndex - 1 + tabButtons.length) % tabButtons.length;
+    if (event.key === "Home") nextIndex = 0;
+    if (event.key === "End") nextIndex = tabButtons.length - 1;
+    if (nextIndex === undefined) return;
+
+    event.preventDefault();
+    const nextButton = tabButtons[nextIndex];
+    activateTab(nextButton.dataset.tabTarget);
+    window.history.replaceState(null, "", `#${nextButton.dataset.tabTarget}`);
+    nextButton.focus();
   });
 });
+
+const requestedPanelId = window.location.hash.slice(1);
+if (tabPanels.some((panel) => panel.id === requestedPanelId)) {
+  activateTab(requestedPanelId);
+  window.requestAnimationFrame(() => {
+    document.getElementById(requestedPanelId)?.scrollIntoView({ block: "start" });
+  });
+}
